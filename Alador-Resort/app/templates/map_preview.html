@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Map Preview | Alador Resort{% endblock %}
+
+{% block content %}
+<section class="container mt-5">
+    <h2 class="text-center mb-4">🗺️ Find Us on the Map</h2>
+    <div id="resort-map" class="rounded shadow position-relative overflow-hidden" style="height: 500px;"
+         aria-label="Interactive map showing Alador Resort location"></div>
+</section>
+
+<!-- 🔗 Navigation & Booking Actions -->
+<section class="container text-center mt-4">
+    <a href="{{ url_for('index') }}" class="btn btn-primary me-2">🏠 Return to Homepage</a>
+
+    {% if reservation_id %}
+    <a href="{{ url_for('edit_booking', reservation_id=reservation_id) }}" class="btn btn-outline-primary me-2">✏️ Edit
+        Booking</a>
+    <a href="{{ url_for('cancel_booking', reservation_id=reservation_id) }}" class="btn btn-outline-danger">❌ Cancel
+        Booking</a>
+    {% endif %}
+</section>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+    const map = L.map('resort-map').setView([9.045, 38.80], 12.5); // Centered near Addis Ababa
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    const resortIcon = L.icon({
+      iconUrl: "{{ url_for('static', filename='images/map_pin.png') }}",
+      iconSize: [40, 40],
+      iconAnchor: [20, 40],
+      popupAnchor: [0, -40]
+    });
+
+    L.marker([9.03, 38.74], { icon: resortIcon })
+      .addTo(map)
+      .bindPopup(`<div style="text-align:center; ">
+                    <strong>Alador Resort</strong><br>
+                    Luxury in Addis Ababa
+                  </div>`)
+      .openPopup();
+</script>
+{% endblock %}

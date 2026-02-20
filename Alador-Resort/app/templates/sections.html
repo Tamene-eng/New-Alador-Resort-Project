@@ -1,0 +1,18 @@
+{% macro section_header(title, emoji="🏝️") %}
+  <div class="section-header text-center my-5">
+    <h2 class="fw-bold">{{ emoji }} {{ title }}</h2>
+    <hr class="mx-auto" style="width: 60px; border-top: 3px solid #0d6efd;">
+  </div>
+{% endmacro %}
+
+{% macro nav_tabs(tabs) %}
+  <div class="overflow-auto">
+    <ul class="nav nav-tabs flex-nowrap fs-5" style="white-space: nowrap;">
+      {% for label, href, emoji, active in tabs %}
+      <li class="nav-item">
+        <a class="nav-link {% if active %}active{% endif %}" href="{{ href }}">{{ emoji }} {{ label }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endmacro %}

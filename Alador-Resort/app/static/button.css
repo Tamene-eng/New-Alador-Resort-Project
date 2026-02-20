@@ -1,0 +1,79 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/buttons.css') }}">
+button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  box-shadow: var(--shadow-sm);
+}
+
+/* static/base.css */
+button, .card, a {
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover, a:hover {
+  transform: scale(1.05);
+  background-color: #f0f0f0;
+}
+
+
+.floating-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: var(--accent-color);
+  color: white;
+  font-size: 1.8rem;
+  padding: 15px 20px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: var(--shadow-lg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 2000;
+}
+
+.floating-btn:hover {
+  transform: scale(1.1);
+}
+
+.toast-message {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #004d40;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 30%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 1000;
+}
+
+.toast-message.show {
+  opacity: 1;
+}
+
+button {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #007bff;
+  transform: scale(1.05);
+}
+
+.modal {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.modal.show {
+  opacity: 1;
+}

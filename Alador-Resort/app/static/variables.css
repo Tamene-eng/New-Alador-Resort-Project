@@ -1,0 +1,52 @@
+/* variables.css */
+:root {
+  /* 🎨 Color Palette */
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #e74c3c;
+  --background-color: #ecf0f1;
+  --text-color: #2d3436;
+  --light-color: #fff;
+  --dark-color: #1a1a1a;
+  --hover-color: #2980b9;
+  --disabled-color: #bdc3c7;
+
+  /* 🖋️ Typography */
+  --font-family-base: 'Segoe UI', tahoma, geneva, verdana, sans-serif;
+  --font-size-base: 16px;
+  --font-size-sm: 14px;
+  --font-size-lg: 20px;
+  --font-size-heading: 2em;
+  --line-height-base: 1.6;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  /* 📐 Spacing & Layout */
+  --padding-sm: 0.5rem;
+  --padding: 1rem;
+  --padding-lg: 2rem;
+  --margin-sm: 0.5rem;
+  --margin: 1rem;
+  --margin-lg: 2rem;
+  --border-radius-sm: 3px;
+  --border-radius: 5px;
+  --border-radius-lg: 8px;
+
+  /* 🎬 Transitions & Effects */
+  --transition-speed: 0.3s;
+  --transition-ease: ease-in-out;
+  --box-shadow-light: 0 2px 5px rgb(0 0 0 / 10%);
+  --box-shadow-heavy: 0 4px 12px rgb(0 0 0 / 20%);
+
+  /* 🧱 Structure */
+  --z-index-modal: 1000;
+  --z-index-dropdown: 900;
+  --z-index-header: 800;
+  --z-index-default: 1;
+
+  /* 📱 Responsive Breakpoints */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}

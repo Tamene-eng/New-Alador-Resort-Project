@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block extra_head %}
+  <title>Site Content</title>
+{% endblock %}
+{% block content %}
+<section class="container my-5">
+    <h1 class="mb-4">📝 Site Content</h1>
+    <form method="post">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+
+        <div class="row g-3">
+            <div class="col-12 col-md-6">
+                <label class="form-label">Brand Name</label>
+                <input class="form-control" name="brand_appName" value="{{ content.brand.appName }}">
+            </div>
+            <div class="col-12 col-md-6">
+                <label class="form-label">Theme Color</label>
+                <input class="form-control" name="brand_theme_color" value="{{ content.brand.theme_color }}">
+            </div>
+            <div class="col-12 col-lg-4">
+                <label class="form-label">Hero Title</label>
+                <input class="form-control" name="hero_title" value="{{ content.hero.title }}">
+            </div>
+            <div class="col-12 col-lg-4">
+                <label class="form-label">Hero Subtitle</label>
+                <input class="form-control" name="hero_subtitle" value="{{ content.hero.subtitle }}">
+            </div>
+            <div class="col-12 col-lg-4">
+                <label class="form-label">Hero Background URL</label>
+                <input class="form-control" name="hero_background" value="{{ content.hero.background }}">
+            </div>
+
+            <div class="col-12">
+                <label class="form-label">Packages (JSON array)</label>
+                <textarea class="form-control" name="packages_json" rows="6">{{ content.packages|tojson }}</textarea>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <label class="form-label">Dining (one per line)</label>
+                <textarea class="form-control" name="dining_text" rows="6">{% for i in content.dining %}{{ i }}
+{% endfor %}</textarea>
+            </div>
+            <div class="col-12 col-lg-6">
+                <label class="form-label">Spa (one per line)</label>
+                <textarea class="form-control" name="spa_text" rows="6">{% for i in content.spa %}{{ i }}
+{% endfor %}</textarea>
+            </div>
+
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Save</button>
+            </div>
+        </div>
+    </form>
+</section>
+{% endblock %}
