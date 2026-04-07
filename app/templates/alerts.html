@@ -1,0 +1,9 @@
+{% macro alert(message, type='info', dismissible=True) %}
+<div class="alert alert-{{ type }} {% if dismissible %}alert-dismissible fade show{% endif %} text-center shadow"
+     role="alert">
+    {{ message }}
+    {% if dismissible %}
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    {% endif %}
+</div>
+{% endmacro %}

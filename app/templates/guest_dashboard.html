@@ -1,0 +1,167 @@
+{% extends "base.html" %}
+{% block title %}Guest Dashboard{% endblock %}
+
+{% block content %}
+
+<!-- ✅ Debug Banner -->
+{% if current_user.is_authenticated %}
+  <div class="debug-banner">✅ Logged in as: {{ current_user.username }}</div>
+{% endif %}
+
+<!-- 🛎️ Booking Form Section -->
+<section class="booking-section parallax-background">
+  <h2 class="section-title">🗓️ Make a New Booking</h2>
+  <form class="booking-form-grid" action="{{ url_for('book') }}" method="POST">
+    <div>
+      <label for="date">Select Date:</label>
+      <input type="text" id="date" name="date" class="flatpickr" required>
+    </div>
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" value="{{ current_user.username }}" readonly>
+    </div>
+    <div class="full-width">
+      <button type="submit" class="btn-primary">Book Now</button>
+    </div>
+  </form>
+</section>
+
+<!-- 📊 Booking Filter Section -->
+<section class="dashboard">
+  <h2>Your Bookings</h2>
+  <form method="GET" action="{{ url_for('dashboard') }}" class="booking-filter">
+    <label for="status">Filter by Status:</label>
+    <select name="status" id="status">
+      <option value="">All</option>
+      <option value="pending">Pending</option>
+      <option value="confirmed">Confirmed</option>
+      <option value="cancelled">Cancelled</option>
+    </select>
+
+    <label for="date">Filter by Date:</label>
+    <label>
+      <input type="text" name="date" class="flatpickr" placeholder="YYYY-MM-DD">
+    </label>
+    <button type="submit" class="btn-secondary">Filter</button>
+  </form>
+
+  {% if bookings %}
+    <ul class="booking-list">
+      {% for booking in bookings %}
+        <li>
+          🗓 {{ booking[0] }} —
+          Status: <strong class="status-tag {{ booking[1] }}">{{ booking[1] }}</strong>
+
+          {% if booking[1] != "cancelled" %}
+            <button onclick="openModal({{ booking[2] }})" class="btn-edit">Reschedule</button>
+            <form action="{{ url_for('cancel_booking', id=booking[0]) }}" method="POST" style="display:inline;">
+              <button type="submit" class="btn-cancel">Cancel</button>
+            </form>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No bookings yet. Submit your first one!</p>
+  {% endif %}
+
+  <!-- 📅 Booking History Chart -->
+  <h3>📅 Your Booking History</h3>
+  <canvas id="guestHistoryChart" width="600" height="300"></canvas>
+</section>
+
+<!-- 📈 Chart Setup -->
+<script>
+new Chart(document.getElementById('guestHistoryChart'), {
+  type: 'line',
+  data: {
+    labels: {{ timeline_months | tojson }},
+    datasets: [{
+      label: 'Bookings',
+      data: {{ timeline_counts | tojson }},
+      backgroundColor: 'rgba(46, 204, 113, 0.2)',
+      borderColor: '#2ecc71',
+      fill: true,
+      tension: 0.3
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      title: { display: true, text: 'Monthly Booking History' }
+    },
+    scales: { y: { beginAtZero: true } }
+  }
+});
+</script>
+
+
+<!-- 📅 Modal for Rescheduling -->
+<div id="rescheduleModal" class="modal-overlay">
+  <div class="modal-content">
+    <h2>Reschedule Booking</h2>
+    <form id="rescheduleForm" method="POST">
+      <label for="new_date">New Date:</label>
+      <input type="text" name="new_date" id="new_date" class="flatpickr" required>
+      <button type="submit" class="btn-primary">Update</button>
+      <button type="button" onclick="closeModal()">Cancel</button>
+    </form>
+  </div>
+</div>
+
+<!-- 💼 Dashboard Navigation -->
+<section class="dashboard">
+  <h2 class="section-title">Your Dashboard</h2>
+  <p class="intro">We’re glad to have you at Alador Resort. Here’s what you can do:</p>
+
+  <div class="grid-container">
+    <div class="dashboard-card">
+      <h3>🗓️ Make a Booking</h3>
+      <p>Reserve a luxurious stay with just a few clicks.</p>
+      <a href="{{ url_for('dashboard') }}" class="btn-primary">Book a Stay</a>
+    </div>
+
+    <div class="dashboard-card">
+      <h3>👤 Your Profile</h3>
+      <p>View your account details and activity summary.</p>
+      <a href="{{ url_for('profile') }}" class="btn-primary">View Profile</a>
+    </div>
+
+    <div class="dashboard-card">
+      <h3>📬 Contact Support</h3>
+      <p>Need assistance? Reach out and we’ll help promptly.</p>
+      <a href="{{ url_for('view_messages') }}" class="btn-primary">Send Message</a>
+    </div>
+    <div class="dashboard-card">
+      <h3>📋 Booking Summary</h3>
+        <!-- Summary content -->
+    </div>
+  </div>
+</section>
+
+<!-- 📅 Flatpickr Setup -->
+<script>
+  const takenDates = {{ taken_dates | tojson }};
+  flatpickr(".flatpickr", {
+    disable: takenDates,
+    minDate: "today",
+    dateFormat: "Y-m-d",
+    locale: { firstDayOfWeek: 1 },
+    onReady: function(_, __, fp) {
+      fp.calendarContainer.insertAdjacentHTML('beforeend', '<div class="availability-note">Only available dates are clickable.</div>');
+    }
+  });
+</script>
+
+<script>
+function openModal(bookingId) {
+  document.getElementById('rescheduleForm').action = `/edit-booking/${bookingId}`;
+  document.getElementById('rescheduleModal').style.display = 'block';
+}
+function closeModal() {
+  document.getElementById('rescheduleModal').style.display = 'none';
+}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/static/bootstrap/js/bootstrap.bundle.min.js"></script>
+</script>
+{% endblock %}

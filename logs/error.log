@@ -1,0 +1,555 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2026 18:28:55] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2026 18:28:55] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2026 18:28:55] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2026 18:28:55] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=DgLE8iUk675PkiL9Ilqo HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2026 18:29:20] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2026 18:29:20] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2026 18:29:20] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2026 18:29:20] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=DgLE8iUk675PkiL9Ilqo HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2026 18:35:16] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2026 18:35:16] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2026 18:35:16] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2026 18:35:16] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=eHTfFcIYJhgQuH22Th0s HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2026 18:35:16] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * To enable the debugger you need to enter the security pin:
+INFO:werkzeug: * Debugger pin code: 141-905-483
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2026 18:35:28] "GET /?__debugger__=yes&cmd=printpin&s=eHTfFcIYJhgQuH22Th0s HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 16:27:53] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 16:27:53] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 16:27:53] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 16:27:53] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=Vq28FzM8KOx1AD7FQgo7 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 16:27:53] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 16:28:29] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 16:28:29] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Admin\\PycharmProjects\\PythonProject\\aladorresort\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+INFO:werkzeug: * Detected change in 'C:\\Users\\Admin\\PycharmProjects\\PythonProject\\aladorresort\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:22:50] "[35m[1mGET /?__debugger__=yes&cmd=printpin&s=Vq28FzM8KOx1AD7FQgo7 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:22:56] "[35m[1mGET /?__debugger__=yes&cmd=pinauth&pin=&s=Vq28FzM8KOx1AD7FQgo7 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:24:05] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:24:06] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:24:06] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:24:06] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=7EEyHmjbFWAFCAWqsEZS HTTP/1.1" 200 -
+INFO:werkzeug: * To enable the debugger you need to enter the security pin:
+INFO:werkzeug: * Debugger pin code: 141-905-483
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:24:19] "GET /?__debugger__=yes&cmd=printpin&s=7EEyHmjbFWAFCAWqsEZS HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Admin\\PycharmProjects\\PythonProject\\aladorresort\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+INFO:werkzeug: * Detected change in 'C:\\Users\\Admin\\PycharmProjects\\PythonProject\\aladorresort\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:33:37] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:33:37] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:33:37] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:33:37] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=yI5AjYUf6PNZy0iE2GDw HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:33:37] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * To enable the debugger you need to enter the security pin:
+INFO:werkzeug: * Debugger pin code: 141-905-483
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:33:52] "GET /?__debugger__=yes&cmd=printpin&s=yI5AjYUf6PNZy0iE2GDw HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:34:24] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:34:24] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:34:24] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:34:24] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=yI5AjYUf6PNZy0iE2GDw HTTP/1.1[0m" 304 -
+INFO:werkzeug: * To enable the debugger you need to enter the security pin:
+INFO:werkzeug: * Debugger pin code: 141-905-483
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:35:47] "GET /?__debugger__=yes&cmd=printpin&s=yI5AjYUf6PNZy0iE2GDw HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:40:15] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:40:15] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:40:15] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:40:15] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=MJXsRMrL5JgLsYv4ggP4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:40:15] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * To enable the debugger you need to enter the security pin:
+INFO:werkzeug: * Debugger pin code: 141-905-483
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:40:20] "GET /?__debugger__=yes&cmd=printpin&s=MJXsRMrL5JgLsYv4ggP4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:43:26] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:43:26] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:43:26] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:43:26] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=MJXsRMrL5JgLsYv4ggP4 HTTP/1.1[0m" 304 -
+INFO:werkzeug: * To enable the debugger you need to enter the security pin:
+INFO:werkzeug: * Debugger pin code: 141-905-483
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:43:30] "GET /?__debugger__=yes&cmd=printpin&s=MJXsRMrL5JgLsYv4ggP4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:43:33] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:43:33] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:43:33] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:43:33] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=MJXsRMrL5JgLsYv4ggP4 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:43:33] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:51:36] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:51:36] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:51:36] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:51:36] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=MJXsRMrL5JgLsYv4ggP4 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:51:36] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:51:39] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:51:39] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:51:39] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:51:39] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=MJXsRMrL5JgLsYv4ggP4 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:51:39] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Admin\\PycharmProjects\\PythonProject\\aladorresort\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+INFO:werkzeug: * Detected change in 'C:\\Users\\Admin\\PycharmProjects\\PythonProject\\aladorresort\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:58:12] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:58:12] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:58:12] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:58:12] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=vo2K2xhYRhUziAMoGawO HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:58:12] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:58:47] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:58:47] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:58:47] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:58:47] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=vo2K2xhYRhUziAMoGawO HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 17:58:47] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 18:03:51] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 18:03:51] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 18:03:51] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 18:03:51] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=vo2K2xhYRhUziAMoGawO HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 18:03:51] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Admin\\PycharmProjects\\PythonProject\\aladorresort\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+INFO:werkzeug: * Detected change in 'C:\\Users\\Admin\\PycharmProjects\\PythonProject\\aladorresort\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+INFO:werkzeug: * Detected change in 'C:\\Users\\Admin\\PycharmProjects\\PythonProject\\aladorresort\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+INFO:werkzeug: * Detected change in 'C:\\Users\\Admin\\PycharmProjects\\PythonProject\\aladorresort\\.venv\\Lib\\site-packages\\requests\\compat.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+INFO:werkzeug: * Detected change in 'C:\\Users\\Admin\\PycharmProjects\\PythonProject\\aladorresort\\.venv\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+INFO:werkzeug: * Detected change in 'C:\\Users\\Admin\\PycharmProjects\\PythonProject\\aladorresort\\.venv\\Lib\\site-packages\\werkzeug\\sansio\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+INFO:werkzeug: * Detected change in 'C:\\Users\\Admin\\PycharmProjects\\PythonProject\\aladorresort\\.venv\\Lib\\site-packages\\werkzeug\\wsgi.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+ERROR:app:App context torn down with error: 'sections' is undefined
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 20:09:22] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 20:09:22] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 20:09:22] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 20:09:22] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=TFWpq2HqHP6r6e45klug HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2026 20:09:22] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+ERROR:app:App context torn down with error: bootstrap4/base.html
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 15:32:04] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 15:32:04] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 15:32:04] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 15:32:04] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=E8lX6ur8apggKQughHhy HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 15:32:04] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Admin\\PycharmProjects\\PythonProject\\aladorresort\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+ERROR:app:App context torn down with error: bootstrap4/base.html
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:09:43] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:09:43] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:09:43] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:09:43] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=qkPUgnwbccTUsoHELrIk HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:09:43] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Admin\\PycharmProjects\\PythonProject\\aladorresort\\.venv\\Lib\\site-packages\\flask_bootstrap\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+ERROR:app:App context torn down with error: bootstrap4/base.html
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:25:51] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:25:51] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:25:51] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:25:51] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=3CieTdII9kR1xEnpejJ5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:25:51] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Admin\\PycharmProjects\\PythonProject\\aladorresort\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+INFO:werkzeug: * Detected change in 'C:\\Users\\Admin\\PycharmProjects\\PythonProject\\aladorresort\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+INFO:werkzeug: * Detected change in 'C:\\Users\\Admin\\PycharmProjects\\PythonProject\\aladorresort\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+ERROR:app:App context torn down with error: bootstrap4/base.html
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:32:06] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:32:06] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:32:06] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:32:06] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=Sqs612bEHROHURkCWCUa HTTP/1.1" 200 -
+ERROR:app:App context torn down with error: 'sections' is undefined
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:37:57] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:37:57] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:37:57] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:37:57] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=Sqs612bEHROHURkCWCUa HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:37:57] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+ERROR:app:App context torn down with error: 'sections' is undefined
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:41:15] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:41:15] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:41:15] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:41:15] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=bLAk0bZzGWPhEPx53sAv HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+ERROR:app:App context torn down with error: 'sections' is undefined
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:50:15] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:50:15] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:50:15] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:50:15] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=o2zWmLMmYxsBnJHeUdIB HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:50:15] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+ERROR:app:App context torn down with error: 'sections' is undefined
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:50:26] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:50:26] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:50:26] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:50:26] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=o2zWmLMmYxsBnJHeUdIB HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:50:26] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+ERROR:app:App context torn down with error: 'sections' is undefined
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:50:29] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:50:29] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:50:29] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:50:29] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=o2zWmLMmYxsBnJHeUdIB HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 16:50:29] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+ERROR:app:App context torn down with error: Encountered unknown tag 'endblock'.
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:00:51] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:00:51] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:00:51] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:00:51] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=MaovZSKrma1i0NBNTapW HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:00:51] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+ERROR:app:App context torn down with error: Encountered unknown tag 'endblock'.
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:13:47] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:13:47] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:13:47] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:13:47] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=MaovZSKrma1i0NBNTapW HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:13:47] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+ERROR:app:App context torn down with error: Encountered unknown tag 'endblock'.
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:13:59] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:13:59] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:13:59] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:13:59] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=MaovZSKrma1i0NBNTapW HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:13:59] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+ERROR:app:App context torn down with error: Encountered unknown tag 'endblock'.
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:14:14] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:14:14] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:14:14] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:14:14] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=MaovZSKrma1i0NBNTapW HTTP/1.1[0m" 304 -
+ERROR:app:App context torn down with error: Encountered unknown tag 'endblock'.
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:15:10] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:15:10] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:15:10] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:15:10] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=MaovZSKrma1i0NBNTapW HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:15:10] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:15:50] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:15:50] "GET /static/styles.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:15:50] "[33mGET /static/hero-parallax.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:15:50] "GET /static/carousel.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:15:50] "GET /static/lightbox.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:15:50] "GET /static/dashboard.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:15:50] "[33mGET /static/theme.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:15:50] "[33mGET /static/main.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:15:50] "[33mGET /static/theme-loader.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:15:50] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:15:51] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:15:51] "[33mGET /static/favicon-32x32.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:15:51] "[33mGET /static/favicon-16x16.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:26] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:26] "[33mGET /static/hero-parallax.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:26] "[33mGET /static/theme.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:26] "[33mGET /static/main.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:26] "[33mGET /static/theme-loader.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:26] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:26] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:26] "[36mGET /static/lightbox.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:26] "[36mGET /static/carousel.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:26] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:26] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:34] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:34] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:37] "[31m[1mGET /book HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:41] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:41] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+ERROR:app:App context torn down with error: expected token ',', got 'hero_parallax'
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:43] "[35m[1mGET /contact HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:43] "GET /contact?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:43] "GET /contact?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:43] "GET /contact?__debugger__=yes&cmd=resource&f=console.png&s=WqZRueDhKjYrqlVed6t1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:43] "GET /contact?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:46] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:46] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+ERROR:app:App context torn down with error: includes/admin/filter_panel.html
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:48] "[35m[1mGET /admin HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:48] "GET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:48] "GET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:48] "GET /admin?__debugger__=yes&cmd=resource&f=console.png&s=WqZRueDhKjYrqlVed6t1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:48] "GET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:51] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:51] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:55] "GET /qr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:55] "[33mGET /static/hero-parallax.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:55] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:55] "[36mGET /static/carousel.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:55] "[36mGET /static/lightbox.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:55] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:55] "GET /static/map.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:55] "[33mGET /static/theme.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:55] "[33mGET /static/images/header_summer.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:55] "[33mGET /static/main.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:55] "[33mGET /static/theme-loader.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:55] "[33mGET /static/js/map.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:55] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:19:57] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:21:40] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:21:40] "[33mGET /static/hero-parallax.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:21:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:21:40] "[36mGET /static/carousel.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:21:40] "[36mGET /static/lightbox.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:21:40] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:21:40] "[33mGET /static/theme.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:21:40] "[33mGET /static/main.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:21:40] "[33mGET /static/theme-loader.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:21:40] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+ERROR:app:App context torn down with error: includes/admin/filter_panel.html
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:21:49] "[35m[1mGET /admin HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:21:49] "[36mGET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:21:49] "[36mGET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:21:49] "[36mGET /admin?__debugger__=yes&cmd=resource&f=console.png&s=WqZRueDhKjYrqlVed6t1 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:21:52] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:21:52] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:21:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:21:54] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:21:54] "[33mGET /static/hero-parallax.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:21:54] "[36mGET /static/carousel.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:21:54] "[36mGET /static/lightbox.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:21:54] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:21:54] "[33mGET /static/main.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:21:54] "[33mGET /static/theme.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:21:54] "[33mGET /static/theme-loader.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:21:54] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:22:02] "[35m[1mGET /weather HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:22:05] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:22:05] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:22:07] "GET /qr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:22:07] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:22:07] "[33mGET /static/hero-parallax.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:22:07] "[36mGET /static/carousel.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:22:07] "[36mGET /static/lightbox.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:22:07] "[36mGET /static/map.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:22:07] "[33mGET /static/theme.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:22:07] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:22:07] "[33mGET /static/main.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:22:07] "[33mGET /static/theme-loader.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:22:07] "[33mGET /static/images/header_summer.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:22:07] "[33mGET /static/js/map.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:22:07] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:22:08] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:22:11] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:22:11] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+ERROR:app:App context torn down with error: expected token ',', got 'hero_parallax'
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:22:16] "[35m[1mGET /contact HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:22:16] "[36mGET /contact?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:22:16] "[36mGET /contact?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:22:16] "[36mGET /contact?__debugger__=yes&cmd=resource&f=console.png&s=WqZRueDhKjYrqlVed6t1 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:22:18] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:22:18] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:26:33] "[35m[1mGET /weather HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:26:36] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:26:36] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:27:07] "[35m[1mGET /weather HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:27:16] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:27:16] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:27:19] "[31m[1mGET /book HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:27:57] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:27:58] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+ERROR:app:App context torn down with error: expected token ',', got 'hero_parallax'
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:28:00] "[35m[1mGET /contact HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:28:00] "[36mGET /contact?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:28:00] "[36mGET /contact?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:28:00] "[36mGET /contact?__debugger__=yes&cmd=resource&f=console.png&s=WqZRueDhKjYrqlVed6t1 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:29:07] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:29:07] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Admin\\PycharmProjects\\PythonProject\\aladorresort\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+ERROR:app:App context torn down with error: expected token ',', got 'hero_parallax'
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:32:37] "[35m[1mGET /contact HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:32:37] "[36mGET /contact?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:32:37] "[36mGET /contact?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:32:37] "GET /contact?__debugger__=yes&cmd=resource&f=console.png&s=PceN4oKlraUkzxxpLR1Q HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:33:09] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+ERROR:app:App context torn down with error: unexpected '}', expected ')'
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:35:54] "[35m[1mGET /contact HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:35:54] "[36mGET /contact?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:35:54] "[36mGET /contact?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:35:54] "[36mGET /contact?__debugger__=yes&cmd=resource&f=console.png&s=PceN4oKlraUkzxxpLR1Q HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:37:01] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:37:01] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:37:03] "[32mGET /book HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:37:03] "GET /login?next=/book HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:37:03] "[33mGET /static/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:37:03] "[33mGET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:37:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:37:03] "[33mGET /static/img/favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:38:02] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:38:02] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+ERROR:app:App context torn down with error: includes/admin/filter_panel.html
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:38:06] "[35m[1mGET /admin HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:38:06] "[36mGET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:38:06] "[36mGET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:38:06] "GET /admin?__debugger__=yes&cmd=resource&f=console.png&s=PceN4oKlraUkzxxpLR1Q HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:39:26] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:39:26] "[33mGET /static/site.webmanifest HTTP/1.1[0m" 404 -
+ERROR:app:App context torn down with error: includes/admin/filter_panel.html
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:39:46] "[35m[1mGET /admin HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:39:46] "[36mGET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:39:46] "[36mGET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:39:46] "[36mGET /admin?__debugger__=yes&cmd=resource&f=console.png&s=PceN4oKlraUkzxxpLR1Q HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Admin\\PycharmProjects\\PythonProject\\aladorresort\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-905-483
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:55:19] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:55:23] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:55:25] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2026 17:55:29] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Admin\\PycharmProjects\\PythonProject\\aladorresort\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat

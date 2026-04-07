@@ -1,0 +1,91 @@
+/* 🔝 Sticky Horizontal Tabs */
+.nav-tabs-container {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1000;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #eee;
+}
+
+/* 🧭 Horizontal Tab Layout */
+.nav-tabs {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: #f93;
+  font-weight: bold;
+}
+
+/* 🌅 Section Headings */
+.section-heading {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #222;
+}
+
+/* 🖼 Gallery Hover Effects */
+.gallery-img:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.1);
+}
+
+/* 🌐 Navbar Scroll Shadow */
+.navbar.scrolled {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* 📌 Animated Underline for Nav Links */
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: var(--accent-color, #f93);
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+.nav-links a.active {
+  color: var(--accent-color, #f93);
+  font-weight: bold;
+}
+
+/* 🍔 Hamburger Menu (for mobile) */
+.hamburger {
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: none;
+}

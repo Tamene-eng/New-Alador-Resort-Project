@@ -1,0 +1,92 @@
+{% macro load_core_styles() %}
+<!-- 🧢 Core Styles -->
+<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='layout.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='navbar.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='buttons.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='animations.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='responsive.css') }}">
+{% endmacro %}
+
+{% macro section_header(title, emoji="🏝️") %}
+<div class="section-header text-center my-5">
+    <h2 class="fw-bold">{{ emoji }} {{ title }}</h2>
+    <hr class="mx-auto" style="width: 60px; border-top: 3px solid #0d6efd;">
+</div>
+{% endmacro %}
+
+{% macro card(image, caption, alt="", folder='resort_main') %}
+<div class="card shadow-sm mb-4">
+    <img src="{{ url_for('static', filename=folder ~ '/' ~ image) }}" class="card-img-top" alt="{{ alt or caption }}">
+    <div class="card-body text-center">
+        <p class="card-text">{{ caption }}</p>
+    </div>
+</div>
+{% endmacro %}
+
+{% macro alert(message, type='info', dismissible=True) %}
+<div class="alert alert-{{ type }} {% if dismissible %}alert-dismissible fade show{% endif %} text-center shadow"
+     role="alert">
+    {{ message }}
+    {% if dismissible %}
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    {% endif %}
+</div>
+{% endmacro %}
+
+{% macro modal(id, title, body, confirm_text='Confirm', cancel_text='Cancel') %}
+<!--suppress XmlDuplicatedId -->
+<div class="modal fade" id="{{ id }}" tabindex="-1" aria-labelledby="{{ id }}Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="{{ id }}Label">{{ title }}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                {{ body }}
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ cancel_text }}</button>
+                <button type="button" class="btn btn-primary">{{ confirm_text }}</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endmacro %}
+
+{% macro nav_tabs(tabs) %}
+<div class="overflow-auto">
+    <ul class="nav nav-tabs flex-nowrap fs-5" style="white-space: nowrap;">
+        {% for label, href, emoji, active in tabs %}
+        <li class="nav-item">
+            <a class="nav-link {% if active %}active{% endif %}" href="{{ href }}">{{ emoji }} {{ label }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endmacro %}
+
+{% macro carousel(id, slides) %}
+<!--suppress XmlDuplicatedId -->
+<div id="{{ id }}" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        {% for image, caption in slides %}
+        <div class="carousel-item {% if loop.first %}active{% endif %}">
+            <img src="{{ url_for('static', filename='resort_main/' ~ image) }}" class="d-block w-100"
+                 alt="{{ caption }}">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>{{ caption }}</h5>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#{{ id }}" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#{{ id }}" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+{% endmacro %}

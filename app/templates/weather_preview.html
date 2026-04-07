@@ -1,0 +1,28 @@
+<!-- No head/body tags here! -->
+<div class="weather-display">
+    <h4>🌡 Temperature: {{ weather.main.temp }}°C</h4>
+    <p>Condition: {{ weather.weather[0].description | capitalize }}
+        <img src="https://openweathermap.org/img/wn/{{ weather.weather[0].icon }}@2x.png"
+             alt="icon" style="height: 48px;">
+    </p>
+
+    <!-- The Map -->
+    <iframe
+        width="100%"
+        height="250"
+        style="border:0; border-radius: 12px;"
+        src="https://google.com{{ weather.name | urlencode }}&output=embed"
+        allowfullscreen>
+    </iframe>
+</div>
+
+<!-- Only keep the specific styles for this box -->
+<style>
+    .weather-display {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border-radius: 15px;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        color: white;
+    }
+</style>

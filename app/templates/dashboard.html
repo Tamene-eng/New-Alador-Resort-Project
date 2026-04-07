@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ brand.resort_name }} Admin Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+ <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+    .sidebar {
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      top: 56px;
+      width: 200px;
+      border-right: 1px solid #ddd;
+    }
+    .main-content {
+      margin-left: 200px;
+      padding: 2rem;
+    }
+    .nav-tabs-scroll {
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    .nav-tabs-scroll .nav-link {
+      font-size: 1.1rem;
+      padding: 0.75rem 1.25rem;
+    }
+
+  .nav-tabs {
+    border-bottom: 2px solid #dee2e6;
+  }
+  .nav-tabs .nav-link {
+    min-width: 120px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark px-3 fixed-top">
+    <a class="navbar-brand" href="#">
+      <img src="{{ brand.icon_url }}" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+      {{ brand.resort_name }}
+    </a>
+  </nav>
+
+  <!-- Sidebar -->
+  <div class="bg-light sidebar py-4">
+    <ul class="nav flex-column">
+      <li class="nav-item"><a class="nav-link active" href="#">Dashboard</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Reservations</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Map</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <h1 class="text-primary">Welcome to Alador Resort</h1>
+    <p class="lead text-muted">Your perfect getaway in Addis Ababa.</p>
+
+    <!-- Cards -->
+    <div class="row mb-4">
+      <div class="col-md-4">
+        <div class="card text-white bg-success shadow">
+          <div class="card-body">
+            <h5 class="card-title">Active Reservations</h5>
+            <p class="card-text fs-4">42</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-white bg-primary shadow">
+          <div class="card-body">
+            <h5 class="card-title">Available Rooms</h5>
+            <p class="card-text fs-4">18</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tabs -->
+    <!-- 🧭 Horizontal Tabs -->
+<div class="container mt-4">
+  <div class="overflow-auto">
+    <ul class="nav nav-tabs flex-nowrap fs-5" style="white-space: nowrap;">
+      <li class="nav-item">
+        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#home" type="button">Home</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#about" type="button">About</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#contact" type="button">Contact</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#gallery" type="button">Gallery</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#services" type="button">Services</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#booking" type="button">Booking</button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="tab-content mt-3">
+    <div class="tab-pane fade show active" id="home">Welcome to Alador Resort!</div>
+    <div class="tab-pane fade" id="about">About our resort...</div>
+    <div class="tab-pane fade" id="contact">Contact info...</div>
+    <div class="tab-pane fade" id="gallery">Gallery content...</div>
+    <div class="tab-pane fade" id="services">Services offered...</div>
+    <div class="tab-pane fade" id="booking">Booking options...</div>
+  </div>
+</div>
+
+  <!-- 🧾 Tab Content -->
+  <div class="tab-content mt-3">
+    <div class="tab-pane fade show active" id="home">
+      <p>Welcome to Alador Resort!</p>
+    </div>
+    <div class="tab-pane fade" id="about">
+      <p>Learn more about our story and mission.</p>
+    </div>
+    <div class="tab-pane fade" id="contact">
+      <p>Contact us at info@aladorresort.com</p>
+    </div>
+    <div class="tab-pane fade" id="gallery">
+      <p>Explore our beautiful resort photos.</p>
+    </div>
+    <div class="tab-pane fade" id="services">
+      <p>We offer spa, dining, tours, and more.</p>
+    </div>
+    <div class="tab-pane fade" id="booking">
+      <p>Ready to book your stay? Click here.</p>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="editBrandModal" tabindex="-1">
+      <div class="modal-dialog">
+        <form class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Edit Branding</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <label>
+              <input type="text" class="form-control mb-2" placeholder="Resort Name">
+            </label>
+            <label>
+              <input type="color" class="form-control mb-2" value="{{ brand.theme_color }}">
+            </label>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  <script src="/static/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
