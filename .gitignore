@@ -1,0 +1,41 @@
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+
+# --- Virtual Environments ---
+venv/
+env/
+.venv/
+ENV/
+
+# --- Flask / Instance ---
+instance/
+*.pid
+
+# --- PyCharm / JetBrains ---
+.idea/
+*.iml
+
+# --- VS Code ---
+.vscode/
+
+# --- OS / Misc ---
+.DS_Store
+Thumbs.db
+
+# --- Testing / Coverage ---
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+
+# --- Build / Packaging ---
+build/
+dist/
+*.egg-info/
+.eggs/
