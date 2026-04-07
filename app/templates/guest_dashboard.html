@@ -11,7 +11,7 @@
 <!-- 🛎️ Booking Form Section -->
 <section class="booking-section parallax-background">
   <h2 class="section-title">🗓️ Make a New Booking</h2>
-  <form class="booking-form-grid" action="{{ url_for('book') }}" method="POST">
+  <form class="booking-form-grid" action="{{ url_for('main.book') }}" method="POST">
     <div>
       <label for="date">Select Date:</label>
       <input type="text" id="date" name="date" class="flatpickr" required>
