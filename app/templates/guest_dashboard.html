@@ -29,7 +29,7 @@
 <!-- 📊 Booking Filter Section -->
 <section class="dashboard">
   <h2>Your Bookings</h2>
-  <form method="GET" action="{{ url_for('dashboard') }}" class="booking-filter">
+  <form method="GET" action="{{ url_for('main.dashboard') }}" class="booking-filter">
     <label for="status">Filter by Status:</label>
     <select name="status" id="status">
       <option value="">All</option>
@@ -118,7 +118,7 @@ new Chart(document.getElementById('guestHistoryChart'), {
     <div class="dashboard-card">
       <h3>🗓️ Make a Booking</h3>
       <p>Reserve a luxurious stay with just a few clicks.</p>
-      <a href="{{ url_for('dashboard') }}" class="btn-primary">Book a Stay</a>
+      <a href="{{ url_for('main.dashboard') }}" class="btn-primary">Book a Stay</a>
     </div>
 
     <div class="dashboard-card">
