@@ -1,3 +1,8 @@
 {
-    "python.analysis.regenerateStdLibIndices": true
+    "python.analysis.regenerateStdLibIndices": true,
+    "python.testing.pytestArgs": [
+        "Alador-Resort"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
 }
