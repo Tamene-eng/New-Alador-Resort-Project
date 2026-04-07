@@ -18,7 +18,7 @@
 
 {% macro card(image, caption, alt="", folder='resort_main') %}
 <div class="card shadow-sm mb-4">
-    <img src="{{ url_for('static', filename=folder ~ '/' ~ image) }}" class="card-img-top" alt="{{ alt or caption }}">
+    <img src="https://picsum.photos/400/300?random={{ image | hash }}" class="card-img-top" alt="{{ alt or caption }}">
     <div class="card-body text-center">
         <p class="card-text">{{ caption }}</p>
     </div>
@@ -74,7 +74,7 @@
     <div class="carousel-inner">
         {% for image, caption in slides %}
         <div class="carousel-item {% if loop.first %}active{% endif %}">
-            <img src="{{ url_for('static', filename='resort_main/' ~ image) }}" class="d-block w-100"
+            <img src="https://picsum.photos/800/600?random={{ image | hash }}" class="d-block w-100"
                  alt="{{ caption }}">
             <div class="carousel-caption d-none d-md-block">
                 <h5>{{ caption }}</h5>
