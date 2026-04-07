@@ -129,7 +129,7 @@ def book():
                (res_id, current_user.id, date, activity))
     db.commit()
     flash("✅ Booking submitted!", "success")
-    return redirect(url_for("dashboard.html"))
+    return redirect(url_for("main.dashboard"))
 
 
 @main.route('/about')
