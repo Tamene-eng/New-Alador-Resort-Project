@@ -113,6 +113,12 @@ def dashboard():
     return render_template("dashboard.html", bookings=bookings)
 
 
+@main.route('/book', methods=['GET'])
+@login_required
+def book_page():
+    return render_template("book.html")
+
+
 @main.route('/book', methods=['POST'])
 def book():
     date = request.form["date"]
