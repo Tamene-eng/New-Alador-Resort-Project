@@ -30,7 +30,7 @@ def get_db():
 
 def get_weather(city="Addis Ababa"):
     api_key = "d76306fd6f5956fce6d476463f022e68"
-    url = f"https://openweathermap.org{city}&appid={api_key}&units=metric"
+    url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
 
     try:
         response = requests.get(url, timeout=5)
