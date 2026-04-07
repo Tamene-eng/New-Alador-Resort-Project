@@ -1,11 +1,8 @@
-# --- Python ---
+# --- Python Bytecode & Cache ---
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-*.db
-*.sqlite3
-*.log
 
 # --- Virtual Environments ---
 venv/
@@ -16,6 +13,19 @@ ENV/
 # --- Flask / Instance ---
 instance/
 *.pid
+
+# --- Environment & Secrets ---
+.env
+*.env
+*.secret
+*.key
+*.pem
+
+# --- Databases & Logs ---
+*.db
+*.sqlite3
+*.log
+logs/
 
 # --- PyCharm / JetBrains ---
 .idea/
