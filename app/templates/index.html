@@ -1,17 +1,12 @@
 {% extends "base.html" %}
 
-{% import 'macros.html' as sections %}
-{% import 'macros.html' as cards %}
-{% import 'macros.html' as alerts %}
-{% import 'macros.html' as carousel %}
+{% include 'sections.html' %}
+{% include 'alerts.html' %}
+{% include 'carousel.html' %}
 
 {% block title %}{{ brand.resort_name }} | Home{% endblock %}
 
 {% block content %}
-    <!--These MUST be inside the block to show up -->
-    {% include 'sections.html' %}
-    {% include 'alerts.html' %}
-    {% include 'carousel.html' %}
 
     <!-- 🌤 Weather Info -->
     <div class="container mt-4">
