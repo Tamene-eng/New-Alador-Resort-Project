@@ -1,8 +1,6 @@
 {% extends "base.html" %}
 
-{% include 'sections.html' %}
-{% include 'alerts.html' %}
-{% include 'carousel.html' %}
+{% import 'macros.html' as macros %}
 
 {% block title %}{{ brand.resort_name }} | Home{% endblock %}
 
@@ -34,7 +32,7 @@
 
     <!-- 🔝 Navigation Tabs -->
     <div class="nav-tabs-container">
-        {{ sections.nav_tabs([
+        {{ macros.nav_tabs([
         ('Home', '#hero', '🏠', True),
         ('Gallery', '#gallery', '🖼', False),
         ('Highlights', '#highlights', '🎞', False),
@@ -61,7 +59,7 @@
 
     <!-- 🖼️ Gallery Section -->
     <section id="gallery" class="container mt-5">
-        {{ sections.section_header('Explore Our Resort', '🖼') }}
+        {{ macros.section_header('Explore Our Resort', '🖼') }}
         <div class="row">
             {% for image, caption in [
             ('Resort_View.jpg', 'Scenic beauty'),
@@ -69,7 +67,7 @@
             ('Resort_View_2.jpg', 'Your luxurious escape')
             ] %}
             <div class="col-md-4 mb-3">
-                {{ cards.card(image, caption) }}
+                {{ macros.card(image, caption) }}
             </div>
             {% endfor %}
         </div>
@@ -78,8 +76,8 @@
 
     <!-- 🎞 Highlights Carousel -->
     <section id="highlights" class="container mt-5">
-        {{ sections.section_header('Alador Highlights', '🎞') }}
-        {{ carousel.carousel('highlightCarousel', [
+        {{ macros.section_header('Alador Highlights', '🎞') }}
+        {{ macros.carousel('highlightCarousel', [
         ('Resort_View.jpg', 'Scenic beauty'),
         ('Relaxing_Spa.jpg', 'Luxury spa moments'),
         ('Resort_View_2.jpg', 'Dream vacation awaits')
@@ -89,7 +87,7 @@
 
     <!-- 🍽 Culinary Section -->
     <section id="culinary" class="container mt-5">
-        {{ sections.section_header('Culinary Adventures', '🍽') }}
+        {{ macros.section_header('Culinary Adventures', '🍽') }}
         <div class="row">
             {% for image, caption in [
             ('Culinary_1.jpg', 'Farm-to-table freshness'),
@@ -97,7 +95,7 @@
             ('Culinary_3.jpg', 'Sunset dining by the pool')
             ] %}
             <div class="col-md-4 mb-3">
-                {{ cards.card(image, caption) }}
+                {{ macros.card(image, caption) }}
             </div>
             {% endfor %}
         </div>
@@ -106,7 +104,7 @@
 
     <!-- ℹ️ About Section -->
     <section id="about" class="container mt-5">
-        {{ sections.section_header('About Alador', 'ℹ️') }}
+        {{ macros.section_header('About Alador', 'ℹ️') }}
         <p>Alador Resort blends tradition with elegance, offering unforgettable stays inspired by Ethiopia’s natural beauty
             and cultural heritage.</p>
     </section>
@@ -114,7 +112,7 @@
 
     <!-- 📞 Contact Section -->
     <section id="contact" class="container mt-5">
-        {{ sections.section_header('Get in Touch', '📞') }}
+        {{ macros.section_header('Get in Touch', '📞') }}
         <p><strong>Phone:</strong> +251-123-456-789</p>
         <p><strong>Email:</strong> contact@aladorresort.com</p>
     </section>
@@ -122,7 +120,7 @@
 
     <!-- 🗓 Booking Section -->
     <section id="booking" class="container mt-5 mb-5">
-        {{ sections.section_header('Book Your Stay', '🗓') }}
+        {{ macros.section_header('Book Your Stay', '🗓') }}
         <p class="lead">Ready to plan your perfect day? Choose your activities and reserve now.</p>
         <a href="{{ url_for('main.book_page') }}" class="btn btn-success btn-lg mb-4">Go to Booking Page</a>
 
@@ -145,163 +143,7 @@
         </div>
 
         <div class="container my-5">
-            {{ alerts.alert('🗓️ Don’t forget to book early for weekend discounts!', 'warning') }}
-        </div>
-    </section>
-
-
-    <!-- 📍 Location Section -->
-    <section id="location" class="container mt-5">
-        <h2 class="text-center mb-4">📍 Discover Alador Resort</h2>
-
-        <!-- 🗺️ Google Map Embed -->
-        <div class="mb-4">
-            <iframe
-                    src="https://www.google.com/maps?q=9.045123,38.765432&hl=es;z=14&output=embed"
-                    width="100%"
-                    height="450"
-                    style="border:0;"
-                    allowfullscreen
-                    loading="lazy">
-            </iframe>
-        </div>
-
-
-        <!-- 📸 Street View Preview -->
-        <div class="mb-4">
-            <iframe
-                    width="100%"
-                    height="450"
-                    style="border:0"
-                    loading="lazy"
-                    allowfullscreen
-                    src="https://www.google.com/maps/embed/v1/streetview?location=9.045123,38.765432&key=YOUR_API_KEY">
-            </iframe>
-        </div>
-
-
-        <div class="text-center">
-            <p>Want to explore nearby attractions?</p>
-            <a href="https://www.google.com/maps/search/attractions/@9.045123,38.765432,15z" target="_blank"
-               class="btn btn-outline-primary">
-                🧭 View Nearby Spots
-            </a>
-        </div>
-    </section>
-
-    <div class="nav-tabs-container">
-        {{ sections.nav_tabs([
-        ('Home', '#hero', '🏠', True),
-        ('Gallery', '#gallery', '🖼', False),
-        ('Highlights', '#highlights', '🎞', False),
-        ('Culinary', '#culinary', '🍽', False),
-        ('About', '#about', 'ℹ️', False),
-        ('Contact', '#contact', '📞', False),
-        ('Booking', '#booking', '🗓', False),
-        ('Dashboard', '/dashboard', '🧭', False),
-        ('Map', '/map_preview', '🗺', False)
-        ]) }}
-    </div>
-
-
-    <!-- 🏠 Hero Section -->
-    <header id="hero" class="bg-dark text-white text-center py-5"
-            style="background-image: url('{{ url_for('static', filename='images/your-resort.jpg') }}'); background-size: cover; background-position: center;">
-        <div class="container">
-            <h1 class="display-4">Welcome to Alador Resort</h1>
-            <p class="lead">Your escape to serenity in the heart of Ethiopia</p>
-            <a class="btn btn-primary btn-lg mt-3" href="#location">Explore Location</a>
-        </div>
-    </header>
-
-
-    <!-- 🖼️ Gallery Section -->
-    <section id="gallery" class="container mt-5">
-        {{ sections.section_header('Explore Our Resort', '🖼') }}
-        <div class="row">
-            {% for image, caption in [
-            ('Resort_View.jpg', 'Scenic beauty'),
-            ('Relaxing_Spa.jpg', 'Rejuvenate at the spa'),
-            ('Resort_View_2.jpg', 'Your luxurious escape')
-            ] %}
-            <div class="col-md-4 mb-3">
-                {{ cards.card(image, caption) }}
-            </div>
-            {% endfor %}
-        </div>
-    </section>
-
-
-    <!-- 🎞 Highlights Carousel -->
-    <section id="highlights" class="container mt-5">
-        {{ sections.section_header('Alador Highlights', '🎞') }}
-        {{ carousel.carousel('highlightCarousel', [
-        ('Resort_View.jpg', 'Scenic beauty'),
-        ('Relaxing_Spa.jpg', 'Luxury spa moments'),
-        ('Resort_View_2.jpg', 'Dream vacation awaits')
-        ]) }}
-    </section>
-
-
-    <!-- 🍽 Culinary Section -->
-    <section id="culinary" class="container mt-5">
-        {{ sections.section_header('Culinary Adventures', '🍽') }}
-        <div class="row">
-            {% for image, caption in [
-            ('Culinary_1.jpg', 'Farm-to-table freshness'),
-            ('Culinary_2.jpg', 'Spiced Ethiopian fusion'),
-            ('Culinary_3.jpg', 'Sunset dining by the pool')
-            ] %}
-            <div class="col-md-4 mb-3">
-                {{ cards.card(image, caption) }}
-            </div>
-            {% endfor %}
-        </div>
-    </section>
-
-
-    <!-- ℹ️ About Section -->
-    <section id="about" class="container mt-5">
-        {{ sections.section_header('About Alador', 'ℹ️') }}
-        <p>Alador Resort blends tradition with elegance, offering unforgettable stays inspired by Ethiopia’s natural beauty
-            and cultural heritage.</p>
-    </section>
-
-
-    <!-- 📞 Contact Section -->
-    <section id="contact" class="container mt-5">
-        {{ sections.section_header('Get in Touch', '📞') }}
-        <p><strong>Phone:</strong> +251-123-456-789</p>
-        <p><strong>Email:</strong> contact@aladorresort.com</p>
-    </section>
-
-
-    <!-- 🗓 Booking Section -->
-    <section id="booking" class="container mt-5 mb-5">
-        {{ sections.section_header('Book Your Stay', '🗓') }}
-        <p class="lead">Ready to plan your perfect day? Choose your activities and reserve now.</p>
-        <a href="{{ url_for('main.book_page') }}" class="btn btn-success btn-lg mb-4">Go to Booking Page</a>
-
-        <form onsubmit="event.preventDefault(); showToast('✅ Booking successful!', 'success');">
-            <div class="mb-3">
-                <label for="checkin" class="form-label">Check-In:</label>
-                <input type="text" id="checkin" class="form-control flatpickr">
-            </div>
-            <div class="mb-3">
-                <label for="checkout" class="form-label">Check-Out:</label>
-                <input type="text" id="checkout" class="form-control flatpickr">
-            </div>
-            <button type="submit" class="btn btn-success">Reserve</button>
-        </form>
-
-        <div class="text-center mt-5">
-            <h5>Your Booking QR Code</h5>
-            <img src="{{ url_for('generate_qr', reservation_id='ABC123') }}" alt="Booking QR" class="img-fluid"
-                 style="max-width: 200px;">
-        </div>
-
-        <div class="container my-5">
-            {{ alerts.alert('🗓️ Don’t forget to book early for weekend discounts!', 'warning') }}
+            {{ macros.alert('🗓️ Don’t forget to book early for weekend discounts!', 'warning') }}
         </div>
     </section>
 
