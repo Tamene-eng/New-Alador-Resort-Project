@@ -2,9 +2,11 @@ import sqlite3
 import uuid
 import requests
 import logging
-from flask import Blueprint, render_template, request, redirect, url_for, flash, g
+from flask import Blueprint, render_template, request, redirect, url_for, flash, g, send_file
 from flask_login import UserMixin, login_user, logout_user, login_required, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
+import qrcode
+from io import BytesIO
 
 # Define the Blueprint
 main = Blueprint('main', __name__)
@@ -158,6 +160,23 @@ def weather_preview_route():
 @main.route('/qr_preview')
 def qr_preview_route():
     return render_template("qr_preview.html")
+
+
+@main.route('/generate_qr/<reservation_id>')
+def generate_qr(reservation_id):
+    # Generate QR code for the reservation
+    qr = qrcode.QRCode(version=1, box_size=10, border=5)
+    qr.add_data(f"Reservation ID: {reservation_id}")
+    qr.make(fit=True)
+    img = qr.make_image(fill='black', back_color='white')
+    
+    # Save to BytesIO
+    buf = BytesIO()
+    img.save(buf, format='PNG')
+    buf.seek(0)
+    
+    return send_file(buf, mimetype='image/png')
+
 
 @main.route('/gallery')
 def gallery():
