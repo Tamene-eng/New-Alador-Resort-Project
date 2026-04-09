@@ -1,82 +1,92 @@
-{% extends "base.html" %}
+{% macro load_core_styles() %}
+<!-- 🧢 Core Styles -->
+<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='layout.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='navbar.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='buttons.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='animations.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='responsive.css') }}">
+{% endmacro %}
 
-{% import 'macros.html' as macros %}
+{% macro section_header(title, emoji="🏝️") %}
+<div class="section-header text-center my-5">
+    <h2 class="fw-bold">{{ emoji }} {{ title }}</h2>
+    <hr class="mx-auto" style="width: 60px; border-top: 3px solid #0d6efd;">
+</div>
+{% endmacro %}
 
-{% block title %}{{ brand.resort_name }} | Home{% endblock %}
-
-{% block content %}
-    <!-- Weather Info -->
-    <div class="container mt-4">
-        {% if weather and not weather.error %}
-            {% include 'weather_preview.html' %}
-        {% else %}
-            <div class="alert alert-warning text-center">
-                {{ weather.error or "Weather data unavailable." }}
-            </div>
-        {% endif %}
+{% macro card(image, caption, alt="", folder='images') %}
+<div class="card shadow-sm mb-4">
+    <img src="{{ url_for('static', filename=folder ~ '/' ~ image) }}" class="card-img-top" alt="{{ alt or caption }}">
+    <div class="card-body text-center">
+        <p class="card-text">{{ caption }}</p>
     </div>
+</div>
+{% endmacro %}
 
-    <!-- Floating Toast -->
-    <div id="booking-toast" class="position-fixed bottom-0 start-50 translate-middle-x mb-4" style="z-index: 1055; display: none;">
-        <div class="toast align-items-center text-white bg-success border-0 show" role="alert" aria-live="assertive">
-            <div class="d-flex">
-                <div class="toast-body">✅ Your reservation has been confirmed!</div>
-                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+{% macro alert(message, type='info', dismissible=True) %}
+<div class="alert alert-{{ type }} {% if dismissible %}alert-dismissible fade show{% endif %} text-center shadow"
+     role="alert">
+    {{ message }}
+    {% if dismissible %}
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    {% endif %}
+</div>
+{% endmacro %}
+
+{% macro modal(id, title, body, confirm_text='Confirm', cancel_text='Cancel') %}
+<!--suppress XmlDuplicatedId -->
+<div class="modal fade" id="{{ id }}" tabindex="-1" aria-labelledby="{{ id }}Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="{{ id }}Label">{{ title }}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                {{ body }}
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ cancel_text }}</button>
+                <button type="button" class="btn btn-primary">{{ confirm_text }}</button>
             </div>
         </div>
     </div>
+</div>
+{% endmacro %}
 
-    <!-- Navigation Tabs -->
-    <div class="nav-tabs-container">
-        {{ macros.nav_tabs([
-            ('Home', '#hero', '🏠', True),
-            ('Gallery', '#gallery', '🖼', False),
-            ('Highlights', '#highlights', '🎞', False),
-            ('Culinary', '#culinary', '🍽', False),
-            ('About', '#about', 'ℹ️', False),
-            ('Contact', '#contact', '📞', False),
-            ('Booking', '#booking', '🗓', False),
-            ('Dashboard', '/dashboard', '🧭', False),
-            ('Map', '/map_preview', '🗺', False)
-        ]) }}
-    </div>
+{% macro nav_tabs(tabs) %}
+<div class="overflow-auto">
+    <ul class="nav nav-tabs flex-nowrap fs-5" style="white-space: nowrap;">
+        {% for label, href, emoji, active in tabs %}
+        <li class="nav-item">
+            <a class="nav-link {% if active %}active{% endif %}" href="{{ href }}">{{ emoji }} {{ label }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endmacro %}
 
-    <!-- Hero Section -->
-    <header id="hero" class="bg-dark text-white text-center py-5" style="background-image: url('{{ url_for('static', filename='images/your-resort.jpg') }}'); background-size: cover; background-position: center;">
-        <div class="container">
-            <h1 class="display-4">Welcome to Alador Resort</h1>
-            <p class="lead">Your escape to serenity in the heart of Ethiopia</p>
-            <a class="btn btn-primary btn-lg mt-3" href="#location">Explore Location</a>
-        </div>
-    </header>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="container mt-5">
-        {{ macros.section_header('Explore Our Resort', '🖼') }}
-        <div class="row">
-            {% for image, caption in [
-                ('Resort_View.jpg', 'Scenic beauty'),
-                ('Relaxing_Spa.jpg', 'Rejuvenate at the spa'),
-                ('Resort_View_2.jpg', 'Your luxurious escape')
-            ] %}
-            <div class="col-md-4 mb-3">
-                {{ macros.card(image, caption) }}
+{% macro carousel(id, slides) %}
+<!--suppress XmlDuplicatedId -->
+<div id="{{ id }}" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        {% for image, caption in slides %}
+        <div class="carousel-item {% if loop.first %}active{% endif %}">
+            <img src="{{ url_for('static', filename='images/' ~ image) }}" class="d-block w-100"
+                 alt="{{ caption }}">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>{{ caption }}</h5>
             </div>
-            {% endfor %}
         </div>
-    </section>
-
-    <!-- (Continue with the rest of the sections, updating macro calls similarly) -->
-
-    <!-- Location Section -->
-    <section id="location" class="container mt-5">
-        <h2 class="text-center mb-4">📍 Discover Alador Resort</h2>
-        <!-- Google Map and Street View iframes remain unchanged -->
-    </section>
-{% endblock %}
-
-{% block extra_scripts %}
-    <script>
-        // Your JavaScript remains unchanged
-    </script>
-{% endblock %}
+        {% endfor %}
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#{{ id }}" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#{{ id }}" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+{% endmacro %}
