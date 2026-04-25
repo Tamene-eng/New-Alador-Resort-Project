@@ -62,9 +62,9 @@
         {{ macros.section_header('Explore Our Resort', '🖼') }}
         <div class="row">
             {% for image, caption in [
-            ('Resort_View.jpg', 'Scenic beauty'),
-            ('Relaxing_Spa.jpg', 'Rejuvenate at the spa'),
-            ('Resort_View_2.jpg', 'Your luxurious escape')
+            ('lightt_view.jpg', 'Scenic beauty'),
+            ('bar_view.jpg', 'Rejuvenate at the spa'),
+            ('fence_side-view.jpg', 'Your luxurious escape')
             ] %}
             <div class="col-md-4 mb-3">
                 {{ macros.card(image, caption) }}
@@ -78,9 +78,9 @@
     <section id="highlights" class="container mt-5">
         {{ macros.section_header('Alador Highlights', '🎞') }}
         {{ macros.carousel('highlightCarousel', [
-        ('Resort_View.jpg', 'Scenic beauty'),
-        ('Relaxing_Spa.jpg', 'Luxury spa moments'),
-        ('Resort_View_2.jpg', 'Dream vacation awaits')
+        ('front_view.jpg', 'Scenic beauty'),
+        ('overall_night-view.jpg', 'Luxury spa moments'),
+        ('plant_view.jpg', 'Dream vacation awaits')
         ]) }}
     </section>
 
@@ -90,9 +90,10 @@
         {{ macros.section_header('Culinary Adventures', '🍽') }}
         <div class="row">
             {% for image, caption in [
-            ('Culinary_1.jpg', 'Farm-to-table freshness'),
-            ('Culinary_2.jpg', 'Spiced Ethiopian fusion'),
-            ('Culinary_3.jpg', 'Sunset dining by the pool')
+            ('sclupture_view.jpg', 'Farm-to-table freshness'),
+            ('side_view.jpg', 'Spiced Ethiopian fusion'),
+            ('spread_view.jpg', 'Sunset dining by the pool'),
+            ('stone_view.jpg', 'Made from Local Stone')
             ] %}
             <div class="col-md-4 mb-3">
                 {{ macros.card(image, caption) }}
